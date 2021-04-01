@@ -8,8 +8,10 @@ import { Component } from '@angular/core';
 export class Tab2Page {
   public form = [
     { val: 'Alongamento de Coluna', isChecked: true },
+ 
+  ];
+  public form1 = [
     { valor: 'Supino', isChecked: true },
-
   ];
   constructor() {}
 
