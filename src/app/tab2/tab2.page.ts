@@ -6,7 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['tab2.page.scss']
 })
 export class Tab2Page {
+  public form = [
+    { val: 'Alongamento de Coluna', isChecked: true },
+    { valor: 'Supino', isChecked: true },
 
+  ];
   constructor() {}
 
 }
