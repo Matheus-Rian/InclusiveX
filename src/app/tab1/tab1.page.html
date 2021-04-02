@@ -1,4 +1,4 @@
-<ion-header [translucent]="true">
+<!-- <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
       elemento-cabeçalho
@@ -7,13 +7,66 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  
 
-  <alex-explore-container name="teste 1"></alex-explore-container>
-  <alex-explore-container name="teste 2"></alex-explore-container>
 
-</ion-content>
+</ion-content> -->
+<ion-app>
+  <ion-menu content-id="main-content">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <ion-list>
+        <ion-list-header>
+          Navigate
+        </ion-list-header>
+        <ion-menu-toggle auto-hide="false">
+          <ion-item button>
+            <ion-icon slot="start" name='home'></ion-icon>
+            <ion-label>
+              Home
+            </ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <ion-page class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-toggle>
+            <ion-button>
+              <ion-icon slot="icon-only" name="menu"></ion-icon>
+            </ion-button>
+          </ion-menu-toggle>
+        </ion-buttons>
+        <ion-title>Header</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <div class="contagem-diaria">
+        <p>2 dias consecultivos</p>
+      </div>
+      <div class="frase-do-dia"> 
+        <h2>frase do dia</h2>
+        <p>A desigualdade social é fascinante, seres humanos tolos e fracos de um lado, e Sukuna do outro.”</p>
+        <div>
+          <p> Platão </p>
+          <p>filosofo</p>
+        </div>
+      </div>
+      <div class=treinamento-diario>
+     
+        <app-buttom-home> </app-buttom-home>
+      </div>
+    </ion-content>
+  </ion-page>
+</ion-app>
+
+<ion-menu-controller></ion-menu-controller>
