@@ -7,10 +7,17 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
   public form = [
-    { val: 'Alongamento de Coluna', isChecked: true },
-    { valor: 'Supino', isChecked: true },
+    { val1: 'Alongamento de Coluna', isChecked: true },
+ 
+  ];
+  public form1 = [
+    { val: 'Supino', isChecked: true },
+  ]; 
 
+  public form2 = [
+    { val2: 'Abdômem', isChecked: true },
   ];
   constructor() {}
+
 
 }
