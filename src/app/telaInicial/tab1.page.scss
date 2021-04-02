@@ -1,7 +1,19 @@
+ion-toolbar {
+  --background:#39A3F7;
+}
+
+ion-header {
+  background: none;
+}
+
+.menu {
+  color: #fff;
+}
+
 .contagem-diaria {
     font-size: 1.25rem;
     height: 40%;
-    background: linear-gradient(180deg, #0066FF 0%, rgba(255, 255, 255, 0) 100%), #3CA7F7;  
+    background: linear-gradient(180deg, #0066FF 0%, rgba(255, 255, 255, 0) 100%), #3CA7F7;
     color: #fff ;
     text-align: center;
     text-decoration: underline;
@@ -21,7 +33,7 @@
     margin-top: -23%;
     width: 85%;
     height: 40%;
-    
+
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.44);
     box-sizing: border-box;
@@ -29,8 +41,9 @@
     padding: 3%;
     .autor {
         text-align: end;
-        // margin: 0;
-        p{margin:0}
+        p {
+          margin:0
+        }
         p:nth-child(1){
             font-weight: bold;
         }

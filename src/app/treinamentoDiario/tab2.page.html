@@ -1,0 +1,101 @@
+<ion-menu content-id="main-content">
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <app-menu-list></app-menu-list>
+  </ion-content>
+</ion-menu>
+
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-toggle>
+        <ion-button>
+          <ion-icon class="menu" slot="icon-only" name="menu"></ion-icon>
+        </ion-button>
+      </ion-menu-toggle>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="treinamento-diario">
+    <h2>Treinamento Diario</h2>
+  </div>
+
+  <div class="imagem1">
+    <img
+      src="../../../assets/Frame 1.svg"
+      alt="cadeirantes">
+  </div>
+
+  <ion-list class="checkbox">
+    <ion-item *ngFor="let entry of form1">
+      <ion-label>{{entry.val}}</ion-label>
+      <ion-checkbox slot="end"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+
+  <div class="paragrafo">
+    <p>O exercício é muito indicado para ganho de massa muscular, afinal, ele pode ser realizado com barra ou halteres,
+      mesmo que improvisados, permitindo a amplitude total do movimento por promover o alongamento e encurtamento da
+      musculatura, o que é excelente para cadeirantes.</p>
+
+    <p>Consiste em estender o cotovelo e voltar até a linha do tronco, que deve se manter encaixado enquanto os
+      cotovelos permanecem abaixo da linha dos ombros.</p>
+
+    <p> Dez séries diárias de 8-12 repetições (com um minuto de descanso entre as séries)</p>
+  </div>
+
+  <div class="video">
+    <iframe width="320" height="200" src="https://www.youtube.com/embed/watch?v=83KpQA9Bp1U">
+    </iframe>
+  </div>
+
+  <ion-list class="checkbox">
+    <ion-item background="#fff" *ngFor="let entry of form">
+      <ion-label>{{entry.val1}}</ion-label>
+      <ion-checkbox slot="end"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+  <div class="paragrafo">
+    <p>Acerte a sua postura na cadeira, de forma que a sua coluna permaneça ereta. Relaxe os ombros e os braços antes de
+      começar a alongar a sua coluna.</p>
+
+    <p>Com um ritmo devagar e constante, vire o seu tronco para o lado direito até que você consiga ver o que está atrás
+      de você. Evite virar o pescoço nesta etapa.</p>
+
+  </div>
+
+  <div class="video">
+    <iframe width="320" height="200" src="https://www.youtube.com/embed/watch?v=GENqCLoCA2o">
+    </iframe>
+  </div>
+
+
+  <ion-list class="checkbox">
+    <ion-item background="#fff" *ngFor="let entry of form2">
+      <ion-label>{{entry.val2}}</ion-label>
+      <ion-checkbox slot="end"></ion-checkbox>
+    </ion-item>
+  </ion-list>
+
+  <div class="paragrafo">
+    <p>Para fortalecer o abdômem, vamos fazer alguns exercícios em 12 minutos como mostra no vídeo.</p>
+
+    <p>Conheça seus limites e sigam as instruções para um melhor aproveitamento.</p>
+
+  </div>
+
+  <div class="video">
+    <iframe width="320" height="200" src="https://www.youtube.com/embed/watch?v=ZdEBxBEs8Yc">
+    </iframe>
+  </div>
+
+</ion-content>
