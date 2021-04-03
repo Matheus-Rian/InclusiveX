@@ -11,7 +11,7 @@ export class Tab3Page {
 
   ];
   public form1 = [
-    { val: 'Supino', isChecked: true },
+    { val: 'Café da manhã', isChecked: true },
   ];
 
   public form2 = [
