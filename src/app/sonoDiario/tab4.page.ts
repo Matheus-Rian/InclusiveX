@@ -6,17 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['tab4.page.scss']
 })
 export class Tab4Page {
-  public form = [
-    { val1: 'Alongamento de Coluna', isChecked: true },
 
-  ];
   public form1 = [
-    { val: 'Supino', isChecked: true },
+    { val: 'Sono Diário', isChecked: true },
   ];
 
-  public form2 = [
-    { val2: 'Abdômem', isChecked: true },
-  ];
+  maisDicas: boolean 
+
   constructor() {}
 
+  dicas() {
+    this.maisDicas = !this.maisDicas
+  }
+
 }
+

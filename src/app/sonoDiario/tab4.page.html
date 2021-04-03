@@ -29,8 +29,8 @@
 
   <div class="imagem1">
     <img
-      src="../../../assets/Frame 1.svg"
-      alt="cadeirantes">
+      src="../../../assets/image 4.svg"
+      alt="cama">
   </div>
 
   <ion-list class="checkbox">
@@ -42,60 +42,35 @@
 
 
   <div class="paragrafo">
-    <p>O exercício é muito indicado para ganho de massa muscular, afinal, ele pode ser realizado com barra ou halteres,
-      mesmo que improvisados, permitindo a amplitude total do movimento por promover o alongamento e encurtamento da
-      musculatura, o que é excelente para cadeirantes.</p>
 
-    <p>Consiste em estender o cotovelo e voltar até a linha do tronco, que deve se manter encaixado enquanto os
-      cotovelos permanecem abaixo da linha dos ombros.</p>
+    <p>Dormir bem é algo fundamental, e são recomendadas 7-10 horas de sono diários para manter um bom padrão de saúde corporal e psicológica.</p>
 
-    <p> Dez séries diárias de 8-12 repetições (com um minuto de descanso entre as séries)</p>
-  </div>
+    <div class="botao">
+      <ion-button (click)="dicas()">
 
-  <div class="video">
-    <iframe width="320" height="200" src="https://www.youtube.com/embed/watch?v=83KpQA9Bp1U">
-    </iframe>
-  </div>
+      <ng-container *ngIf="maisDicas">
+        Menos Dicas              
+      </ng-container>
 
-  <ion-list class="checkbox">
-    <ion-item background="#fff" *ngFor="let entry of form">
-      <ion-label>{{entry.val1}}</ion-label>
-      <ion-checkbox slot="end"></ion-checkbox>
-    </ion-item>
-  </ion-list>
+      <ng-container *ngIf="!maisDicas">
+        Mais Dicas             
+      </ng-container>
 
-  <div class="paragrafo">
-    <p>Acerte a sua postura na cadeira, de forma que a sua coluna permaneça ereta. Relaxe os ombros e os braços antes de
-      começar a alongar a sua coluna.</p>
+      </ion-button>
+    </div>
 
-    <p>Com um ritmo devagar e constante, vire o seu tronco para o lado direito até que você consiga ver o que está atrás
-      de você. Evite virar o pescoço nesta etapa.</p>
+    <ng-container *ngIf="maisDicas">
 
-  </div>
+      <p>Disciplina com o sono é indispensável, além de dormir bem, você deve estabelecer um horário para ir à cama e um horário para levantar-se, evitando mudanças no horário.</p>
 
-  <div class="video">
-    <iframe width="320" height="200" src="https://www.youtube.com/embed/watch?v=GENqCLoCA2o">
-    </iframe>
-  </div>
+      <p>Evite álcool e cafeína. Estas duas substâncias são inimigas do sono. O café deve ser evitado antes da hora do jantar. O álcool, por mais que te dê sono, é um efeito passageiro. Quando os níveis da substância começam a baixar durante a noite seu sono será afetado, e você pode acordar sem disposição e com variações de humor.</p>
 
+      <p>Investir em seu sono também é importante, tente dormir com o máximo de conforto que puder, pois além de dormir bastante, você deve dormir confortável.</p>
 
-  <ion-list class="checkbox">
-    <ion-item background="#fff" *ngFor="let entry of form2">
-      <ion-label>{{entry.val2}}</ion-label>
-      <ion-checkbox slot="end"></ion-checkbox>
-    </ion-item>
-  </ion-list>
+      <p>Tente desenvolver uma rotina de desaceleração. Uns 30 ou 20 minutos antes de dormir se desligue de equipamentos eletrônicos e lugares barulhentos. Músicas calmas em volume baixo e uma leitura são ótimos companheiros nesta hora. Mas deixe de lado tabletes ou smartphones que emitem luz. Um livro impresso é recomendado.</p>
+    
+    </ng-container>
 
-  <div class="paragrafo">
-    <p>Para fortalecer o abdômem, vamos fazer alguns exercícios em 12 minutos como mostra no vídeo.</p>
-
-    <p>Conheça seus limites e sigam as instruções para um melhor aproveitamento.</p>
-
-  </div>
-
-  <div class="video">
-    <iframe width="320" height="200" src="https://www.youtube.com/embed/watch?v=ZdEBxBEs8Yc">
-    </iframe>
   </div>
 
 </ion-content>
