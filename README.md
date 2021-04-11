@@ -4,12 +4,12 @@
 
 <h1 style="font-family: roboto;" align='center'>
   <img src='https://img.shields.io/static/v1?label=status&message=Development&color=ffd700&style=for-the-badge&logo=ionic'></img>
-  <img src='https://img.shields.io/static/v1?label=MovieMove&message=1.0v&color=4169E1&style=for-the-badge&logo=mega'></img>
-  <img src='https://img.shields.io/static/v1?label=Prox&message=1.1v&color=2E8B57&style=for-the-badge&logo=mega'></img>
+  <img src='https://img.shields.io/static/v1?label=InclusiveX&message=1.0v&color=4169E1&style=for-the-badge&logo=Osano'></img>
+  <img src='https://img.shields.io/static/v1?label=Prox&message=1.1v&color=2E8B57&style=for-the-badge&logo=Osano'></img>
 </h1>
 
 <h1 style="font-family: roboto;" align='center'>
-  <img src=''></img>
+  <img src='./src/assets/gifInclusiveX.gif' height=425></img>
 </h1>
 
 
@@ -43,7 +43,7 @@ $ ionic serve
 ### 🏁 Features 
 
 - [X] Interface
-- [x] Business Rule
+- [X] Business Rule
 - [X] Componentized
 
 #### :construction: More features coming soon ...
